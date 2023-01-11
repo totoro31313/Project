@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Engine/Classes/Components/BoxComponent.h"
 #include "ProjectCharacter.generated.h"
 
 UCLASS(config=Game)
@@ -68,5 +69,11 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+
+//플레이어 interact
+private:
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* InteractionBox;
 };
 
