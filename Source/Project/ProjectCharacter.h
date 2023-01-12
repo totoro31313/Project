@@ -71,9 +71,5 @@ public:
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
 
-//플레이어 interact
-private:
-	UPROPERTY(EditAnywhere)
-	UBoxComponent* InteractionBox;
 };
 
